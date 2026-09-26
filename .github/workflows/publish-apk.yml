@@ -1,0 +1,29 @@
+name: publish-apk
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/publish-apk.yml
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the signed APK
+        run: |
+          mkdir -p releases
+          curl -fsSL -A "Mozilla/5.0" -o releases/sillage.apk "https://litter.catbox.moe/v0nba0.apk"
+          echo "d652aadceed724f05f393202740209b89baa4a8c5d0a0a2bb3b52c1a4abe5313  releases/sillage.apk" | sha256sum -c -
+      - name: Publish the release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.1
+          name: Sillage 1.0.1
+          body: Correction de l'écran blanc au démarrage.
+          files: releases/sillage.apk
+          fail_on_unmatched_files: true
