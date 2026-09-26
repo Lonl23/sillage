@@ -1,9 +1,7 @@
 {
-  "versionCode": 1,
-  "versionName": "1.0.0",
-  "apkEncoding": "base64",
-  "parts": 7,
-  "partUrl": "https://raw.githubusercontent.com/Lonl23/sillage/main/releases/parts",
-  "sha256": "e2e5bc2a792e9a6015c1962e48a2ce0f8a90e44e23ff504e7c7524314e299c8a",
-  "notes": "Carnet Sillage 1.0.0."
+  "versionCode": 2,
+  "versionName": "1.0.1",
+  "apkUrl": "https://litter.catbox.moe/v0nba0.apk",
+  "sha256": "d652aadceed724f05f393202740209b89baa4a8c5d0a0a2bb3b52c1a4abe5313",
+  "notes": "Correction de l'écran blanc au démarrage."
 }
