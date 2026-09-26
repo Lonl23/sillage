@@ -1,0 +1,9 @@
+{
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "apkEncoding": "base64",
+  "parts": 7,
+  "partUrl": "https://raw.githubusercontent.com/Lonl23/sillage/main/releases/parts",
+  "sha256": "e2e5bc2a792e9a6015c1962e48a2ce0f8a90e44e23ff504e7c7524314e299c8a",
+  "notes": "Carnet Sillage 1.0.0."
+}
